@@ -1,0 +1,17 @@
+[
+   {
+      "icon":"MdPlace",
+      "title":"find Us",
+      "description":"1234 North Street, New York, NY 555555"
+   },
+   {
+      "icon":"TbMailPlus",
+      "title":"Email Us",
+      "description":"demo@mail.com"
+   },
+   {
+      "icon":"IoCallSharp",
+      "title":"Call Us",
+      "description":"+1 123 456 7890"
+   }
+]

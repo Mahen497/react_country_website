@@ -1,0 +1,140 @@
+/* Header styling */
+.header {
+   background: #1a73e8;
+   /* Primary color */
+   color: white;
+   padding: 15px 0;
+   /* display: flex;
+   justify-content: space-between;
+   align-items: center; */
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__top {
+   display: flex;
+   align-items: center;
+   max-width: 1530px;
+   margin: 0 auto;
+   padding: 0 15px;
+   justify-content: space-between;
+}
+
+
+.logo {
+   font-size: 24px;
+   font-weight: bold;
+}
+
+.nav {
+   display: flex;
+   gap: 20px;
+}
+
+.nav a {
+   text-decoration: none;
+   color: white;
+   transition: color 0.3s ease;
+}
+
+.nav a:hover {
+   color: #191919;
+   /* Gold hover effect */
+}
+
+.footer {
+   padding: 0 0 15px;
+}
+
+.footer_content_inner {
+   color: #FFF;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1530px;
+   margin: 0 auto;
+   padding: 20px 15px 15px;
+   background-color: #1a73e8;
+}
+
+.footer__content {
+   color: #FFF;
+   background-color: #1a73e8;
+}
+
+.footer-links a {
+   color: #FFF;
+   padding-inline: 10px;
+   text-decoration: none;
+}
+
+.footer-links a:hover {
+   color: #212121;
+}
+
+
+
+/* Footer Top Container */
+.footer__top {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   background-color: transparent;
+   /* Dark background */
+   color: white;
+   padding: 20px 20px;
+   text-align: center;
+   gap: 20px;
+}
+
+/* Footer Item */
+.footer__top__item {
+   flex: 1;
+   min-width: 250px;
+   padding: 20px;
+   border-radius: 8px;
+   background: rgb(26 115 232);
+   /* Slight transparent effect */
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+.footer__top__item:hover {
+   background: rgb(10 93 203);
+}
+
+/* Footer Titles */
+.footer__top__item h3 {
+   font-size: 18px;
+   margin-bottom: 10px;
+   font-weight: bold;
+   color: #FFF;
+   /* Twitter blue for highlight */
+}
+
+/* Footer Descriptions */
+.footer__top__item p {
+   font-size: 14px;
+   color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .footer__top {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .footer__top__item {
+      width: 90%;
+   }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .nav {
+      flex-direction: column;
+      text-align: center;
+   }
+}

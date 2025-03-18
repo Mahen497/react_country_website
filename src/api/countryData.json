@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "United States",
+    "capital": "Washington, D.C.",
+    "region": "Americas",
+    "population": 331002651,
+    "flag": "https://flagcdn.com/w320/us.png",
+    "currency": "USD"
+  },
+  {
+    "id": 2,
+    "name": "India",
+    "capital": "New Delhi",
+    "region": "Asia",
+    "population": 1380004385,
+    "flag": "https://flagcdn.com/w320/in.png",
+    "currency": "INR"
+  },
+  {
+    "id": 3,
+    "name": "Germany",
+    "capital": "Berlin",
+    "region": "Europe",
+    "population": 83783942,
+    "flag": "https://flagcdn.com/w320/de.png",
+    "currency": "EUR"
+  },
+  {
+    "id": 4,
+    "name": "France",
+    "capital": "Paris",
+    "region": "Europe",
+    "population": 65273511,
+    "flag": "https://flagcdn.com/w320/fr.png",
+    "currency": "EUR"
+  },
+  {
+    "id": 5,
+    "name": "Japan",
+    "capital": "Tokyo",
+    "region": "Asia",
+    "population": 126476461,
+    "flag": "https://flagcdn.com/w320/jp.png",
+    "currency": "JPY"
+  },
+  {
+    "id": 6,
+    "name": "Australia",
+    "capital": "Canberra",
+    "region": "Oceania",
+    "population": 25499884,
+    "flag": "https://flagcdn.com/w320/au.png",
+    "currency": "AUD"
+  },
+  {
+    "id": 7,
+    "name": "Brazil",
+    "capital": "Brasília",
+    "region": "Americas",
+    "population": 212559417,
+    "flag": "https://flagcdn.com/w320/br.png",
+    "currency": "BRL"
+  },
+  {
+    "id": 8,
+    "name": "Canada",
+    "capital": "Ottawa",
+    "region": "Americas",
+    "population": 37742154,
+    "flag": "https://flagcdn.com/w320/ca.png",
+    "currency": "CAD"
+  },
+  {
+    "id": 9,
+    "name": "South Africa",
+    "capital": "Pretoria",
+    "region": "Africa",
+    "population": 59308690,
+    "flag": "https://flagcdn.com/w320/za.png",
+    "currency": "ZAR"
+  },
+  {
+    "id": 10,
+    "name": "United Kingdom",
+    "capital": "London",
+    "region": "Europe",
+    "population": 67886011,
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "currency": "GBP"
+  }
+]

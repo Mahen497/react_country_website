@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+/* Container */
+.country-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+
+  li {
+    padding-inline: 10px;
+  }
+}
+
+/* Error Page Container */
+.error-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Error Heading */
+.error-container h1 {
+  font-size: 3rem;
+  color: #ff4c4c;
+  margin-bottom: 20px;
+}
+
+/* Error Message */
+.error-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Error Details */
+.error-details {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Back to Home Link */
+.home-link {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #1a73e8;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #1558b4;
+}
+
+.country_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.country_single {
+  padding: 15px;
+  width: calc(33.333% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Contact Form Container */
+.contact-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1558b4;
+}
+
+/* Search Filter */
+.search-filter {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Country List */
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Country Card Container */
+.country-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  list-style: none;
+  width: calc(20% - 16px);
+  padding: 0;
+}
+
+/* Hover Effect */
+.country-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Country Flag */
+.country-flag {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Country Details */
+.country-details {
+  padding: 16px;
+  text-align: left;
+}
+
+.country-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.country-details p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+}
+
+button:disabled {
+  background-color: #1a1a1a;
+}
+
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin: 30px 0;
+}
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .country-card {
+    max-width: 100%;
+  }
+
+  .country-flag {
+    height: 150px;
+  }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .error-container h1 {
+    font-size: 2rem;
+  }
+
+  .error-container p {
+    font-size: 1rem;
+  }
+}
