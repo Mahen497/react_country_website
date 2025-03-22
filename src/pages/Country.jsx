@@ -82,9 +82,9 @@ export const Country = () => {
 
    const totalPages = Math.ceil(filterCountries.length / itemsPerPage);
 
-   return (
+    return (
       <>
-         <main className="country-container">
+         <div className="country-container">
 
             {isPending && <h1>Loading...</h1>}
 
@@ -101,6 +101,7 @@ export const Country = () => {
                setSortBy={setSortBy} // Pass sorting prop
                currentPage={currentPage}
                setCurrentPage={setCurrentPage}
+               countries={countries}
             />
             {/* Country Cards */}
             <ul className="country-list">
@@ -126,7 +127,7 @@ export const Country = () => {
                   </button>
                ))}
             </div>
-         </main>
+         </div>
       </>
    );
 };

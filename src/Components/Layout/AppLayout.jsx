@@ -6,7 +6,7 @@ export const AppLayout = () => {
    return (
       <>
          <Header />
-         <div className="content_wrap">
+         <div className="common-container">
             <Outlet/>
          </div>
          <Footer />

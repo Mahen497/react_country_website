@@ -13,12 +13,18 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Container */
-.country-container {
+.common-container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px;
 }
+
+/* Container */
+/* .country-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+} */
 
 /* Page Title */
 .page-title {
@@ -182,6 +188,7 @@ button:hover {
   gap: 15px;
   margin-bottom: 30px;
 }
+
 .search-filter input,
 .search-filter select {
   padding: 10px;
@@ -250,6 +257,7 @@ button:disabled {
   text-align: center;
   margin: 30px 0;
 }
+
 .pagination button {
   padding: 10px 15px;
   margin: 0 5px;

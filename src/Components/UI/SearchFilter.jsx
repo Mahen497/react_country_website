@@ -1,4 +1,4 @@
-export const SearchFilter = ({ search, setSearch, filter, setFilter, sortBy, setSortBy, setCurrentPage }) => {
+export const SearchFilter = ({ search, setSearch, filter, setFilter, sortBy, setSortBy, setCurrentPage, countries }) => {
 
    const handleInputChange = (e) => {
       setSearch(e.target.value)
@@ -13,6 +13,14 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, sortBy, set
    const handleSortChange = (e) => {
       setSortBy(e.target.value);
    }
+
+   // Get unique regions from countries
+   const uniqueRegions = Array.from(
+      new Set(countries.map(
+         (country) => country.region).filter(Boolean)
+      )
+   );
+
    return (<>
       <div className="search-filter">
          <input
@@ -21,12 +29,22 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, sortBy, set
             value={search}
             onChange={handleInputChange}
          />
+
          {/* Region Filter */}
          <select value={filter} onChange={handleChangeRegion}>
             <option value="all">All</option>
+            {
+               uniqueRegions.map((region) => {
+                  return <option value={region}>{region}</option>
+               })
+            }
+         </select>
+
+         {/* <select value={filter} onChange={handleChangeRegion}>
+            <option value="all">All</option>
             <option value="Africa">Africa</option>
             <option value="Asia">Asia</option>
-         </select>
+         </select> */}
 
          {/* Sort By */}
          <select value={sortBy} onChange={handleSortChange}>
@@ -35,6 +53,15 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, sortBy, set
             <option value="population-asc">Population (Low to High)</option>
             <option value="population-desc">Population (High to Low)</option>
          </select>
+
+         <button onClick={()=>{
+            setSearch('');
+            setFilter('all');
+            setSortBy('name-asc');
+            setCurrentPage(1);
+         }}>
+            Clear Filters
+         </button>
       </div>
    </>);
 }

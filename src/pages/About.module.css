@@ -1,0 +1,44 @@
+/* src/components/About/About.module.css */
+
+.aboutContainer {
+   max-width: 800px;
+   margin: 2rem auto;
+   padding: 2rem;
+   border-radius: 16px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   background-color: #f9f9f9;
+ }
+ 
+ .heading {
+   font-size: 2rem;
+   color: #2a2a2a;
+   margin-bottom: 1rem;
+ }
+ 
+ .description {
+   font-size: 1.2rem;
+   line-height: 1.8;
+   color: #555;
+ }
+ 
+ .subHeading {
+   margin-top: 1.5rem;
+   font-size: 1.5rem;
+ }
+ 
+ .featureList {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .featureList li {
+   margin: 0.5rem 0;
+ }
+ 
+ .footer {
+   margin-top: 2rem;
+   font-size: 1rem;
+   color: #777;
+   text-align: center;
+ }
+ 

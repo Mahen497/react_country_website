@@ -5,7 +5,11 @@ export const Header = () => {
    return (<>
       <header className="header">
          <div className="header__top">
-            <h1 className="logo">CountryEase</h1>
+            <h1 className="logo">
+               <NavLink to="/">
+                  CountryEase
+               </NavLink>
+            </h1>
             <nav className="nav">
                <ul>
                   <li><NavLink to="/">Home</NavLink></li>

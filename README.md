@@ -101,6 +101,11 @@ Country-Explorer/
 - **Performance Optimization:** Optimize API calls and UI rendering for better performance.
 - **Country Comparison:**
    - Users can select and compare multiple countries side-by-side.
+- **Display how many countries are in each region:** 
+  - const regionCounts = countries.reduce((acc, country) => {
+      acc[country.region] = (acc[country.region] || 0) + 1;
+      return acc;
+   }, {});
 
 
 ## 📚 Technologies Used
